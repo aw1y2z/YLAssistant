@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      深色模式窗口背景必须与 Miuix 深色 surface 一致（文档 8.1 的 #0D0D0D），
+      否则 edge-to-edge 下状态栏未绘制区域露白底，视觉上表现为"状态栏和下面割裂"。
+    -->
+    <style name="Theme.YLAssistant" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">#0D0D0D</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 同浅色主题：显式透明，状态栏露出深色窗口背景 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

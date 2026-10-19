@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      页面底色由 MiuixTheme 决定，这里只给窗口一个不闪烁的初始背景，
+      并提供 AppCompatActivity 需要的 AppCompat 环境。
+    -->
+    <style name="Theme.YLAssistant" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="windowNoTitle">true</item>
+        <!--
+          必须显式透明：AppCompat.Light 默认 statusBarColor 是深灰色，
+          会把状态栏涂成灰条，与白色内容割裂。透明后露出 windowBackground，
+          与内容底色一致。
+        -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>
